@@ -3,52 +3,7 @@ import { StyleSheet, Button, Image, Text, TextInput, TouchableOpacity, View } fr
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-
-
-function LoginScreen({ navigation }) {
-  return (
-    <>
-      <View style={loginStyles.loginContainer}>
-        <Image
-          resizeMode = 'contain'
-          style={loginStyles.image}
-          source={require('./assets/images/logo.jpg')}
-        />
-        <TextInput 
-          style={loginStyles.fillIn}
-          textAlign={'center'}
-          placeholder='Email Address'
-        />
-        <TextInput
-          style={loginStyles.fillIn}
-          textAlign={'center'}
-          placeholder='Password'
-        />
-        <View style={[{ width: "70%", margin: 10,}]}>
-          <TouchableOpacity
-            style={loginStyles.loginScreenButton}
-            onPress = {() => navigation.navigate('Main')}
-            underlayColor='#fff'
-          >
-            <Text style={loginStyles.loginButtonText}>Login</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-
-      <View style={loginStyles.footer}>
-        <TouchableOpacity>
-          <Text style={loginStyles.footerText}>Forgot Password?</Text>
-        </TouchableOpacity> 
-        <Text style={{fontSize: 24}}>  |  </Text>
-        <TouchableOpacity
-          onPress = {() => navigation.navigate('Register')}
-        >
-          <Text style={loginStyles.footerText}>Register Here</Text>
-        </TouchableOpacity>      
-      </View>
-    </>
-  );
-}
+import LoginScreen from './src/screens/LoginScreen.js'
 
 function RegisterScreen({ navigation }) {
   return (
@@ -57,7 +12,7 @@ function RegisterScreen({ navigation }) {
         <Image
           resizeMode = 'contain'
           style={loginStyles.image}
-          source={require('./assets/images/logo.jpg')}
+          source={require('./res/images/logo.jpg')}
         />
         <TextInput 
           style={loginStyles.fillIn}
@@ -113,7 +68,7 @@ function MainScreen({ navigation }) {
         <TouchableOpacity
           onPress = {() => navigation.navigate('Login')} 
         >
-          <Image style={mainStyles.linesButton} source={require('./assets/images/Lines.jpg')} />
+          <Image style={mainStyles.linesButton} source={require('./res/images/Lines.jpg')} />
         </TouchableOpacity>
         <Text style={mainStyles.titleText}>MECHANOX</Text>
         <Image style={mainStyles.headerRight} />
@@ -126,24 +81,24 @@ function MainScreen({ navigation }) {
           <TouchableOpacity
             onPress = {() => navigation.navigate('Bookings')}
           >
-            <Image style={mainStyles.mainButton} source={require('./assets/images/BookNow.jpg')} />
+            <Image style={mainStyles.mainButton} source={require('./res/images/BookNow.jpg')} />
           </TouchableOpacity>
           <TouchableOpacity
             onPress = {() => navigation.navigate('Orders')}
           >
-            <Image style={mainStyles.mainButton} source={require('./assets/images/YourOrders.jpg')} />          
+            <Image style={mainStyles.mainButton} source={require('./res/images/YourOrders.jpg')} />          
           </TouchableOpacity>        
         </View>
         <View style={mainStyles.imageRow}>
         <TouchableOpacity
           onPress = {() => navigation.navigate('Settings')}
         >
-            <Image style={mainStyles.mainButton} source={require('./assets/images/Settings.jpg')} />
+            <Image style={mainStyles.mainButton} source={require('./res/images/Settings.jpg')} />
           </TouchableOpacity>
           <TouchableOpacity
             onPress = {() => navigation.navigate('Promotions')}
           >
-            <Image style={mainStyles.mainButton} source={require('./assets/images/Promotions.jpg')} />          
+            <Image style={mainStyles.mainButton} source={require('./res/images/Promotions.jpg')} />          
           </TouchableOpacity>
         </View>
       </View>
@@ -164,7 +119,7 @@ function BookingsScreen( { navigation }) {
         <TouchableOpacity
           onPress = {() => navigation.navigate('Login')} 
         >
-          <Image style={mainStyles.linesButton} source={require('./assets/images/Lines.jpg')} />
+          <Image style={mainStyles.linesButton} source={require('./res/images/Lines.jpg')} />
         </TouchableOpacity>
         <Text 
           style={mainStyles.titleText}
@@ -193,7 +148,7 @@ function OrdersScreen( { navigation }) {
         <TouchableOpacity
           onPress = {() => navigation.navigate('Login')} 
         >
-          <Image style={mainStyles.linesButton} source={require('./assets/images/Lines.jpg')} />
+          <Image style={mainStyles.linesButton} source={require('./res/images/Lines.jpg')} />
         </TouchableOpacity>
         <Text 
           style={mainStyles.titleText}
@@ -222,7 +177,7 @@ function SettingsScreen( { navigation }) {
         <TouchableOpacity
           onPress = {() => navigation.navigate('Login')} 
         >
-          <Image style={mainStyles.linesButton} source={require('./assets/images/Lines.jpg')} />
+          <Image style={mainStyles.linesButton} source={require('./res/images/Lines.jpg')} />
         </TouchableOpacity>
         <Text 
           style={mainStyles.titleText}
@@ -251,7 +206,7 @@ function PromotionsScreen( { navigation }) {
         <TouchableOpacity
           onPress = {() => navigation.navigate('Login')} 
         >
-          <Image style={mainStyles.linesButton} source={require('./assets/images/Lines.jpg')} />
+          <Image style={mainStyles.linesButton} source={require('./res/images/Lines.jpg')} />
         </TouchableOpacity>
         <Text 
           style={mainStyles.titleText}
