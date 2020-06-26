@@ -11,18 +11,6 @@ import OrdersScreen from './src/screens/OrdersScreen.js';
 import SettingsScreen from './src/screens/SettingsScreen.js';
 import PromotionsScreen from './src/screens/PromotionsScreen.js';
 
-function TempScreen( { navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Temp Screen</Text>
-      <Button
-        title="Go to Main"
-        onPress={() => navigation.navigate('Main')}
-      />
-    </View>
-  );
-}
-
 const Stack = createStackNavigator();
 
 function App() {
