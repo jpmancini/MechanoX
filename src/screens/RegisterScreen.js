@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 import images from 'res/images.js';
 import loginStyles from 'res/styles/loginStyles.js';

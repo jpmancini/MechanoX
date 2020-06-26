@@ -1,5 +1,3 @@
-import StyleSheet from 'react-native';
-
 const loginStyles = {
     loginContainer: {
       flex: 12,
