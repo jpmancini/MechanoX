@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Button, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
-import logo from 'res/images/logo.jpg';
+//import Logo from '../../res/images/Logo.js'
+import images from 'res/images.js';
 
 const loginStyles = StyleSheet.create({
     loginContainer: {
@@ -68,7 +69,7 @@ function LoginScreen({ navigation }) {
           <Image
             resizeMode = 'contain'
             style={loginStyles.image}
-            source={logo}
+            source={images.Logo}
           />
           <TextInput 
             style={loginStyles.fillIn}

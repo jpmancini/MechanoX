@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import LoginScreen from './src/screens/LoginScreen.js'
+import MainScreen from './src/screens/MainScreen.js'
 
 function RegisterScreen({ navigation }) {
   return (
@@ -12,7 +13,7 @@ function RegisterScreen({ navigation }) {
         <Image
           resizeMode = 'contain'
           style={loginStyles.image}
-          source={require('./res/images/logo.jpg')}
+          source={require('./res/images/Logo.jpg')}
         />
         <TextInput 
           style={loginStyles.fillIn}
@@ -56,57 +57,6 @@ function RegisterScreen({ navigation }) {
         >
           <Text style={loginStyles.termsText}>By registering, you agree to all of our terms and conditions</Text>
         </TouchableOpacity>    
-      </View>
-    </>
-  );
-}
-
-function MainScreen({ navigation }) {
-  return (
-    <>
-      <View style={mainStyles.header}>
-        <TouchableOpacity
-          onPress = {() => navigation.navigate('Login')} 
-        >
-          <Image style={mainStyles.linesButton} source={require('./res/images/Lines.jpg')} />
-        </TouchableOpacity>
-        <Text style={mainStyles.titleText}>MECHANOX</Text>
-        <Image style={mainStyles.headerRight} />
-      </View>
-
-      <View style={mainStyles.mainContainer}>
-        <Text style={mainStyles.welcomeText}>Welcome</Text>
-        <Text style={mainStyles.nameText}>Full Name</Text>
-        <View style={mainStyles.imageRow}>
-          <TouchableOpacity
-            onPress = {() => navigation.navigate('Bookings')}
-          >
-            <Image style={mainStyles.mainButton} source={require('./res/images/BookNow.jpg')} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress = {() => navigation.navigate('Orders')}
-          >
-            <Image style={mainStyles.mainButton} source={require('./res/images/YourOrders.jpg')} />          
-          </TouchableOpacity>        
-        </View>
-        <View style={mainStyles.imageRow}>
-        <TouchableOpacity
-          onPress = {() => navigation.navigate('Settings')}
-        >
-            <Image style={mainStyles.mainButton} source={require('./res/images/Settings.jpg')} />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress = {() => navigation.navigate('Promotions')}
-          >
-            <Image style={mainStyles.mainButton} source={require('./res/images/Promotions.jpg')} />          
-          </TouchableOpacity>
-        </View>
-      </View>
-
-      <View style={mainStyles.footer}>
-        <TouchableOpacity>
-          <Text style={mainStyles.footerText}>Help and Support Center</Text>
-        </TouchableOpacity> 
       </View>
     </>
   );
