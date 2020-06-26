@@ -7,4 +7,4 @@ const images = {
     Promotions:require('./images/Promotions.jpg'),
   }
   
-  export default images
+  export default images;
