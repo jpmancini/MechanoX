@@ -55,13 +55,13 @@ const mainStyles = {
       width: 50,
       height: 40,
       marginLeft: 25,
-      marginBottom: -15,
+      marginBottom: -25,
     },
     headerRight: {
       width: 50,
       height: 40,
       marginRight: 25,
-      marginBottom: -15,
+      marginBottom: -25,
     }
   }
 
