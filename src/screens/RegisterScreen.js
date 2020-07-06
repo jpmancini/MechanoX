@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
-
 import images from 'res/images.js';
 import loginStyles from 'res/styles/loginStyles.js';
 
+//export const EmailContext = React.createContext();
+//export const PasswordContext = React.createContext();
+
 function RegisterScreen({ navigation }) {
+
+    //const [email, setEmail] = useState();
+    //const [password, setPassword] = useState();
+
     return (
       <>
         <View style={loginStyles.loginContainer}>
@@ -13,31 +19,37 @@ function RegisterScreen({ navigation }) {
             style={loginStyles.image}
             source={images.Logo}
           />
-          <TextInput 
+        <TextInput 
             style={loginStyles.fillIn}
             textAlign={'center'}
             placeholder='Full Name'
-          />
-          <TextInput
+            onChangeText={text => setName(text)}
+        />
+        <TextInput
             style={loginStyles.fillIn}
             textAlign={'center'}
             placeholder='Email Address'
-          />
-          <TextInput 
+            onChangeText={text => setEmail(text)}
+        />
+        <TextInput 
             style={loginStyles.fillIn}
             textAlign={'center'}
             placeholder='Phone Number'
-          />
-          <TextInput
+            onChangeText={text => setPhone(text)}
+        />
+        <TextInput
             style={loginStyles.fillIn}
             textAlign={'center'}
             placeholder='Password'
-          />
-          <TextInput
+            secureTextEntry={true}
+            onChangeText={text => setPassword(text)}
+        />
+        <TextInput
             style={loginStyles.fillIn}
             textAlign={'center'}
             placeholder='Confirm Password'
-          />
+            secureTextEntry={true}
+        />
           <View style={[{ width: "70%", margin: 10,}]}>
             <TouchableOpacity
               style={loginStyles.loginScreenButton}

@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
-
 import images from 'res/images.js';
 import loginStyles from 'res/styles/loginStyles.js';
+//import { EmailContext, PasswordContext } from './RegisterScreen.js';
 
 function LoginScreen({ navigation }) {
+
+  //const [email, setEmail] = useContext(EmailContext);
+  //const [password, setPassword] = useContext(PasswordContext);
+
     return (
       <>
         <View style={loginStyles.loginContainer}>
@@ -22,6 +26,7 @@ function LoginScreen({ navigation }) {
             style={loginStyles.fillIn}
             textAlign={'center'}
             placeholder='Password'
+            secureTextEntry={true}
           />
           <View style={[{ width: "70%", margin: 10,}]}>
             <TouchableOpacity
