@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const FlatListBasics = () => {
+const VehicleList = () => {
   return (
     <View style={styles.container}>
       <FlatList
@@ -28,4 +28,4 @@ const FlatListBasics = () => {
   );
 }
 
-export default FlatListBasics;
+export default VehicleList;

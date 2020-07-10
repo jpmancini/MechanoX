@@ -5,7 +5,7 @@ import loginStyles from 'res/styles/loginStyles.js';
 import images from 'res/images.js';
 import mainStyles from 'res/styles/mainStyles.js';
 import vehicleStyles from 'res/styles/vehicleStyles.js';
-import FlatListBasics from 'res/components/List.js';
+import VehicleList from 'res/components/List.js';
 
 function VehiclesScreen( { navigation }) {
   const state = {
@@ -28,11 +28,13 @@ function VehiclesScreen( { navigation }) {
       </View>
 
       <View style={mainStyles.centerContainer}>
-        <FlatListBasics></FlatListBasics>
-
         <Text style={vehicleStyles.vehicleText}>
           Select your Vehicle
         </Text>
+        <VehicleList>
+        </VehicleList>
+
+
         <View style={vehicleStyles.inputRow}>
           <TextInput 
             style={vehicleStyles.fillIn}

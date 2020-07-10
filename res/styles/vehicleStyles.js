@@ -28,7 +28,7 @@ const vehicleStyles = {
     vehicleText: {
         fontSize: 32,
         color: '#fff',
-        marginTop: 80,
+        marginTop: 40,
     },
     inputRow: {
         flexDirection: 'row',
