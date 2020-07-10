@@ -69,7 +69,7 @@ const mainStyles = {
       height: 40,
       marginRight: 25,
       marginBottom: -25,
-    }
+    },
   }
 
   export default mainStyles;

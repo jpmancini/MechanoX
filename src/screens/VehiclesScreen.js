@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
-import { Image, Text, TouchableOpacity, View, } from 'react-native';
+import React from 'react';
+import { Image, Text, TouchableOpacity, View, TextInput, } from 'react-native';
 import loginStyles from 'res/styles/loginStyles.js';
 
 import images from 'res/images.js';
 import mainStyles from 'res/styles/mainStyles.js';
+import vehicleStyles from 'res/styles/vehicleStyles.js';
+import FlatListBasics from 'res/components/List.js';
 
 function VehiclesScreen( { navigation }) {
   const state = {
@@ -26,8 +28,34 @@ function VehiclesScreen( { navigation }) {
       </View>
 
       <View style={mainStyles.centerContainer}>
+        <FlatListBasics></FlatListBasics>
+
+        <Text style={vehicleStyles.vehicleText}>
+          Select your Vehicle
+        </Text>
+        <View style={vehicleStyles.inputRow}>
+          <TextInput 
+            style={vehicleStyles.fillIn}
+            textAlign={'center'}
+            placeholder='Enter Year'
+            placeholderTextColor='#fff'
+          />
+          <TextInput 
+            style={vehicleStyles.fillIn}
+            textAlign={'center'}
+            placeholder='Enter Make'
+            placeholderTextColor='#fff'
+          />
+        </View>
+        <TextInput 
+            style={vehicleStyles.fillIn}
+            textAlign={'center'}
+            placeholder='Enter Model'
+            placeholderTextColor='#fff'
+        />
+
         <TouchableOpacity
-          style={loginStyles.loginScreenButton}
+          style={vehicleStyles.vehicleScreenButton}
           //onPress = {() => navigation.navigate('Main')}
           underlayColor='#fff'
         >
