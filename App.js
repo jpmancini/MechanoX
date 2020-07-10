@@ -7,7 +7,7 @@ import MainScreen from './src/screens/MainScreen.js';
 import RegisterScreen from './src/screens/RegisterScreen.js';
 import BookingsScreen from './src/screens/BookingsScreen.js';
 import OrdersScreen from './src/screens/OrdersScreen.js';
-import SettingsScreen from './src/screens/SettingsScreen.js';
+import VehiclesScreen from './src/screens/VehiclesScreen.js';
 import PromotionsScreen from './src/screens/PromotionsScreen.js';
 
 const Stack = createStackNavigator();
@@ -21,7 +21,7 @@ function App() {
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="Bookings" component={BookingsScreen} />
         <Stack.Screen name="Orders" component={OrdersScreen} />
-        <Stack.Screen name="Settings" component={SettingsScreen} />
+        <Stack.Screen name="Vehicles" component={VehiclesScreen} />
         <Stack.Screen name="Promotions" component={PromotionsScreen} />
       </Stack.Navigator>
     </NavigationContainer>

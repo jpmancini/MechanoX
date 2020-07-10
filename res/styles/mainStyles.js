@@ -5,6 +5,13 @@ const mainStyles = {
       alignItems: 'center',
       flexDirection: "column",
     },
+    centerContainer:{
+      flex: 12,
+      backgroundColor: '#1b2033',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: "column",
+    },
     header: {
       flex: 1.5,
       backgroundColor: '#fff',

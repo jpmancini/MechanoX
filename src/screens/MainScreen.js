@@ -34,7 +34,7 @@ function MainScreen({ navigation }) {
           </View>
           <View style={mainStyles.imageRow}>
           <TouchableOpacity
-            onPress = {() => navigation.navigate('Settings')}
+            onPress = {() => navigation.navigate('Vehicles')}
           >
               <Image style={mainStyles.mainButton} source={images.MyVehicles} />
             </TouchableOpacity>
