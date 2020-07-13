@@ -1,6 +1,7 @@
 const vehicleStyles = {
     vehicleScreenButton: {
         height: 40,
+        width: 225,
         marginRight: 15,
         marginLeft: 15,
         marginTop: 20,
@@ -12,7 +13,7 @@ const vehicleStyles = {
         borderWidth: 0,
     },
     fillIn: {
-        height: 30,
+        height: 40,
         width: 175,
         marginRight: 5,
         marginLeft: 5,
