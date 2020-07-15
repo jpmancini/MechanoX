@@ -53,7 +53,7 @@ function RegisterScreen({ navigation }) {
           <View style={[{ width: "70%", margin: 10,}]}>
             <TouchableOpacity
               style={loginStyles.loginScreenButton}
-              onPress = {() => navigation.navigate('Main')}
+              onPress = {() => navigation.navigate('Login')}
               underlayColor='#fff'
             >
               <Text style={loginStyles.loginButtonText}>Register</Text>

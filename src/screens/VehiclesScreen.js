@@ -5,7 +5,7 @@ import loginStyles from 'res/styles/loginStyles.js';
 import images from 'res/images.js';
 import mainStyles from 'res/styles/mainStyles.js';
 import vehicleStyles from 'res/styles/vehicleStyles.js';
-import VehicleList from 'res/components/List.js';
+import VehicleList from 'res/components/VehicleList.js';
 
 function VehiclesScreen( { navigation }) {
   const state = {

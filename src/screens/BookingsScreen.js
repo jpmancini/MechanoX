@@ -28,6 +28,10 @@ function BookingsScreen( { navigation }) {
         </View>
   
         <View style={mainStyles.mainContainer}>
+          <Text style={bookingStyles.bookingText}>
+            Select your Service
+          </Text>
+
           <DropDownPicker zIndex={8}
             items={[
               {label: 'Tire Pressure Monitor Lamp Diagnosis', value: '0'},
@@ -41,6 +45,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Diagnosis & Testing'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 50, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -58,6 +66,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Powertrain, Engine & Transmission'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 15, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -75,6 +87,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Heating & Air Conditioning'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 15, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -92,6 +108,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Electrical & Lights'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 15, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -109,6 +129,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Suspension, Steering & Wheels'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 15, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -126,6 +150,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Brakes'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 15, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -143,6 +171,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Body, Glass & Interior'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 15, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -160,6 +192,10 @@ function BookingsScreen( { navigation }) {
             ]}
             defaultValue={service}
             placeholder='Scheduled Maintenance'
+            placeholderStyle={{
+              fontWeight: 'bold',
+              textAlign: 'center'
+            }}
             containerStyle={{ marginTop: 15, width: 300, height: 40 }}
             style={{backgroundColor: '#fafafa'}}
             itemStyle={{
@@ -173,10 +209,10 @@ function BookingsScreen( { navigation }) {
 
           <TouchableOpacity
             style={bookingStyles.bookingScreenButton}
-            //onPress = {() => navigation.navigate('Main')}
+            onPress = {() => navigation.navigate('Providers')}
             underlayColor='#fff'
           >
-            <Text style={loginStyles.loginButtonText}>Select Your Service</Text>
+            <Text style={loginStyles.loginButtonText}>Find a Provider</Text>
           </TouchableOpacity>
         </View>
   
