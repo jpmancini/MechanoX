@@ -27,11 +27,13 @@ const vehicleStyles = {
         color: '#fff',
     },
     vehicleText: {
+        flex: 1,
         fontSize: 32,
         color: '#fff',
         marginTop: 40,
     },
     inputRow: {
+        flex: 1,
         flexDirection: 'row',
         marginTop: 14,
     },

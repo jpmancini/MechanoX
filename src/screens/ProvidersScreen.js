@@ -28,6 +28,16 @@ function ProvidersScreen( { navigation }) {
             </Text>
             <ProviderList>
             </ProviderList>
+
+            <View style={{ flex: 1 }}>
+              <TouchableOpacity
+                style={bookingStyles.bookingScreenButton}
+                onPress = {() => navigation.navigate('Providers')}
+                underlayColor='#fff'
+              >
+                <Text style={bookingStyles.bookingButtonText}>Schedule an Appointment</Text>
+              </TouchableOpacity>
+          </View>
         </View>
   
         <View style={mainStyles.footer}>

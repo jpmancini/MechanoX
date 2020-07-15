@@ -3,36 +3,16 @@ import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity }
 
 const DATA = [
   {
-    id: "1p",
-    title: "First Provider",
+    id: "1o",
+    title: "Order 1",
   },
   {
-    id: "2p",
-    title: "Second Provider",
+    id: "2o",
+    title: "Order 2",
   },
   {
-    id: "3p",
-    title: "Third Provider",
-  },
-  {
-    id: "4p",
-    title: "Fourth Provider",
-  },
-  {
-    id: "5p",
-    title: "Fifth Provider",
-  },
-  {
-    id: "6p",
-    title: "Sixth Provider",
-  },
-  {
-    id: "7p",
-    title: "Seventh Provider",
-  },
-  {
-    id: "8p",
-    title: "Eight Provider",
+    id: "3o",
+    title: "Order 3",
   },
 ];
 
@@ -42,11 +22,11 @@ const Item = ({ item, onPress, style }) => (
   </TouchableOpacity>
 );
 
-const ProviderList = () => {
+const OrderList = () => {
   const [selectedId, setSelectedId] = useState(null);
 
   const renderItem = ({ item }) => {
-    const backgroundColor = item.id === selectedId ? "#a3a3a3" : "#fff";
+    const backgroundColor = item.id === selectedId ? "#fff" : "#fff";
 
     return (
       <Item
@@ -86,4 +66,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProviderList;
+export default OrderList;
