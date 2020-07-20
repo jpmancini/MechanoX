@@ -1,3 +1,5 @@
+import { BorderlessButton } from "react-native-gesture-handler";
+
 const bookingStyles = {
     serviceContainer: {
         flex: 8,
@@ -27,7 +29,25 @@ const bookingStyles = {
         color: '#fff',
         marginTop: 30,
         marginBottom: 10,
-    },  
+    },
+    calendarStyle: {
+        height: 300,
+        width: 400,
+        marginTop: 100,
+        marginBottom: 150,
+    },
+    inputRow: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginTop: 14,
+    },
+    timeText: {
+        marginTop: 25,
+        color: '#fff',
+        fontSize: 24,
+        fontWeight: 'bold',
+    },
 }
 
 export default bookingStyles;

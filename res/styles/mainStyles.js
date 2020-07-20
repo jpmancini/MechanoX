@@ -70,6 +70,15 @@ const mainStyles = {
       marginRight: 25,
       marginBottom: -25,
     },
+    topContainer: {
+      flex: 1,
+    },
+    midContainer: {
+      flex: 5,
+    },
+    botContainer: {
+      flex: 1,
+    },
   }
 
   export default mainStyles;

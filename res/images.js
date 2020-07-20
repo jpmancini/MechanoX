@@ -6,6 +6,7 @@ const images = {
     Settings: require('./images/Settings.jpg'),
     Promotions: require('./images/Promotions.jpg'),
     MyVehicles: require('./images/MyVehicles.jpg'),
+    tempCalendar: require('./images/tempCalendar.jpg'),
   }
   
   export default images;

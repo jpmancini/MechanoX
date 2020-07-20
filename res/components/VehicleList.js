@@ -4,35 +4,15 @@ import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity }
 const DATA = [
   {
     id: "1v",
-    title: "First Car",
+    title: "Ford Explorer 2017",
   },
   {
     id: "2v",
-    title: "Second Car",
+    title: "Honda Civic 2014",
   },
   {
     id: "3v",
-    title: "Third Car",
-  },
-  {
-    id: "4v",
-    title: "Fourth Car",
-  },
-  {
-    id: "5v",
-    title: "Fifth Car",
-  },
-  {
-    id: "6v",
-    title: "Sixth Car",
-  },
-  {
-    id: "7v",
-    title: "Seventh Car",
-  },
-  {
-    id: "8v",
-    title: "Eigth Car",
+    title: "Toyota Corolla 2012",
   },
 ];
 

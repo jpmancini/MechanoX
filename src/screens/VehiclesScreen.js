@@ -63,6 +63,14 @@ function VehiclesScreen( { navigation }) {
         >
           <Text style={loginStyles.loginButtonText}>Add New Vehicle</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity
+          style={vehicleStyles.vehicleScreenButton}
+          onPress = {() => navigation.navigate('Bookings')}
+          underlayColor='#fff'
+        >
+          <Text style={loginStyles.loginButtonText}>Book Now</Text>
+        </TouchableOpacity>
       </View>
 
       <View style={mainStyles.footer}>

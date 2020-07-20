@@ -22,7 +22,7 @@ function MainScreen({ navigation }) {
           <Text style={mainStyles.nameText}>Full Name</Text>
           <View style={mainStyles.imageRow}>
             <TouchableOpacity
-              onPress = {() => navigation.navigate('Bookings')}
+              onPress = {() => navigation.navigate('Vehicles')}
             >
               <Image style={mainStyles.mainButton} source={images.BookNow} />
             </TouchableOpacity>

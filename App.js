@@ -10,6 +10,7 @@ import OrdersScreen from './src/screens/OrdersScreen.js';
 import VehiclesScreen from './src/screens/VehiclesScreen.js';
 import PromotionsScreen from './src/screens/PromotionsScreen.js';
 import ProvidersScreen from './src/screens/ProvidersScreen.js';
+import AppointmentScreen from './src/screens/AppointmentScreen.js';
 
 const Stack = createStackNavigator();
 
@@ -25,6 +26,7 @@ function App() {
         <Stack.Screen name="Vehicles" component={VehiclesScreen} />
         <Stack.Screen name="Promotions" component={PromotionsScreen} />
         <Stack.Screen name="Providers" component={ProvidersScreen} />
+        <Stack.Screen name="Appointment" component={AppointmentScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
