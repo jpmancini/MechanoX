@@ -4,35 +4,35 @@ import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity }
 const DATA = [
   {
     id: "1p",
-    title: "First Provider",
+    title: "Max's Mechanic Shop",
   },
   {
     id: "2p",
-    title: "Second Provider",
+    title: "Joe's Auto Repair Shop",
   },
   {
     id: "3p",
-    title: "Third Provider",
+    title: "Steve's Fixing Store",
   },
   {
     id: "4p",
-    title: "Fourth Provider",
+    title: "Marty Mechanic",
   },
   {
     id: "5p",
-    title: "Fifth Provider",
+    title: "Alex's Car Dealer",
   },
   {
     id: "6p",
-    title: "Sixth Provider",
+    title: "Taylor's Honda Shop",
   },
   {
     id: "7p",
-    title: "Seventh Provider",
+    title: "Brookside Repairs",
   },
   {
     id: "8p",
-    title: "Eight Provider",
+    title: "D.C. Mechanic Shop",
   },
 ];
 

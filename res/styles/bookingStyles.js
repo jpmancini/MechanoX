@@ -48,6 +48,12 @@ const bookingStyles = {
         fontSize: 24,
         fontWeight: 'bold',
     },
+    confirmationText: {
+        fontSize: 32,
+        color: '#fff',
+        marginTop: 30,
+        marginBottom: 10,
+    }
 }
 
 export default bookingStyles;
