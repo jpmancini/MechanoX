@@ -1,24 +1,34 @@
 import React, { useState } from "react";
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { View, FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity } from "react-native";
 
 const DATA = [
   {
     id: "1o",
-    title: "Order 1",
+    car: "Honda Civic 2014",
+    job: "Pre-Purchase Car Inspection",
+    shop: "Max's Mechanic Shop",
+    date: "8/12/20 4:00 PM",
+    address: "1 Main St, New York, NY",
   },
   {
     id: "2o",
-    title: "Order 2",
-  },
-  {
-    id: "3o",
-    title: "Order 3",
-  },
+    car: "Toyota Corolla 2012",
+    job: "Air Filter Replacement",
+    shop: "Joe's Auto Repair Shop",
+    date: "9/3/20 10:00 AM",
+    address: "1 Main St, New York, NY",
+  }
 ];
 
 const Item = ({ item, onPress, style }) => (
   <TouchableOpacity onPress={onPress} style={[styles.item, style]}>
-    <Text style={styles.title}>{item.title}</Text>
+    <View style = { styles.item }>
+      <Text style={styles.title}>{item.car}</Text>
+      <Text style={styles.subtext}>{item.job}</Text>
+      <Text style={styles.subtext}>{item.shop}</Text>
+      <Text style={styles.subtext}>{item.date}</Text>
+      <Text style={styles.subtext}>{item.address}</Text>
+    </View>
   </TouchableOpacity>
 );
 
@@ -56,14 +66,22 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   item: {
-    padding: 30,
+    flexDirection: 'column',
+    padding: 10,
     marginVertical: 8,
-    marginHorizontal: 16,
-    width: 300,
+    marginHorizontal: 15,
+    width: '90%',
   },
   title: {
-    fontSize: 32,
+    fontSize: 20,
+    fontWeight: 'bold',
   },
+  subtext: {
+    fontSize: 14,
+  },
+  ratingBox: {
+    flexDirection: 'row',
+  }
 });
 
 export default OrderList;
