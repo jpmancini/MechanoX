@@ -1,37 +1,14 @@
-import React, { useState } from 'react';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
-import DropDownPicker from 'react-native-dropdown-picker';
+import React, {useState} from "react";
+import { View, DropDownPicker } from "react-native";
 
-import images from 'res/images.js';
-import mainStyles from 'res/styles/mainStyles.js';
 import bookingStyles from 'res/styles/bookingStyles.js';
 
-function BookingsScreen( { navigation }) {
+function Services() {
 
   const [service, setService] = useState('');
 
-
-    return (
-      <>
-        <View style={mainStyles.header}>
-          <TouchableOpacity
-            onPress = {() => navigation.navigate('Login')} 
-          >
-            <Image style={mainStyles.linesButton} source={images.Lines} />
-          </TouchableOpacity>
-          <Text 
-            style={mainStyles.titleText}
-            onPress = {() => navigation.navigate('Main')}
-          >MECHANOX</Text>
-          <Image style={mainStyles.headerRight} />
-        </View>
-  
-        <View style={mainStyles.mainContainer}>
-          <Text style={bookingStyles.bookingText}>
-            Select your Service
-          </Text>
-
-          <View style={ bookingStyles.serviceContainer }>
+  return(
+    <View style={ bookingStyles.serviceContainer }>
             <DropDownPicker zIndex={8}
               items={[
                 {label: 'Tire Pressure Monitor Lamp Diagnosis', value: '0'},
@@ -86,12 +63,8 @@ function BookingsScreen( { navigation }) {
             />
             <DropDownPicker zIndex={6}
               items={[
-                {label: 'AC Compressor Replacement', value: '0'},
-                {label: 'AC Condensor Replacement', value: '1'},
-                {label: 'AC Evaporator Replacement', value: '2'},
-                {label: 'AC Reciever Drier Assembly Replacement', value: '3'},
-                {label: 'AC Refridgerant Line Replacement', value: '4'},
-                {label: 'AC Recharge', value: '5'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Heating & Air Conditioning'
@@ -111,12 +84,8 @@ function BookingsScreen( { navigation }) {
             />
             <DropDownPicker zIndex={5}
               items={[
-                {label: 'Battery Cable Replacement', value: '0'},
-                {label: 'Headlight Bulb Replacement', value: '1'},
-                {label: 'Ignition Switch Replacement', value: '2'},
-                {label: 'Multi-Function Switch Replacement', value: '3'},
-                {label: 'Window Regulator Motor Replacement', value: '4'},
-                {label: 'Windshield Washer Pump Replacement', value: '5'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Electrical & Lights'
@@ -136,12 +105,8 @@ function BookingsScreen( { navigation }) {
             />
             <DropDownPicker zIndex={4}
               items={[
-                {label: 'Suspension Ball Joint Replacement', value: '0'},
-                {label: 'Coil Spring Replacement', value: '1'},
-                {label: 'Control Arm Replacement', value: '2'},
-                {label: 'Suspension Control Arm Bushings Replacement', value: '3'},
-                {label: 'Stabilizer Bar Link Kit Replacement', value: '4'},
-                {label: 'Wheel Alignment', value: '5'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Suspension, Steering & Wheels'
@@ -161,12 +126,8 @@ function BookingsScreen( { navigation }) {
             />
             <DropDownPicker zIndex={3}
               items={[
-                {label: 'Brake Line Replacement', value: '0'},
-                {label: 'Brake Master Cylinder Replacement', value: '1'},
-                {label: 'Brake Pad Replacement', value: '2'},
-                {label: 'Brake Bleed', value: '3'},
-                {label: 'Wheel Speed Sensor Replacement', value: '4'},
-                {label: 'Brake Booster Replacement', value: '5'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Brakes'
@@ -186,12 +147,8 @@ function BookingsScreen( { navigation }) {
             />
             <DropDownPicker zIndex={2}
               items={[
-                {label: 'Air Bag Control Module Replacement', value: '0'},
-                {label: 'Hood Release Cable Replacement', value: '1'},
-                {label: 'Window Regulator Replacement', value: '2'},
-                {label: 'Door Lock Cylinder Replacement', value: '3'},
-                {label: 'Door Lock Actuator Replacement', value: '4'},
-                {label: 'Trunk Lock Actuator Replacement', value: '5'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Body, Glass & Interior'
@@ -204,19 +161,15 @@ function BookingsScreen( { navigation }) {
               itemStyle={{
                   justifyContent: 'flex-start'
               }}
-              dropDownStyle={{ backgroundColor: '#fafafa', height: 130 }}
+              dropDownStyle={{backgroundColor: '#fafafa'}}
               /*onChangeItem={item => setService({
                   service: item.value
               })}*/
             />
             <DropDownPicker zIndex={1}
               items={[
-                {label: '10,000 Mile Service', value: '0'},
-                {label: '20,000 Mile Service', value: '1'},
-                {label: '30,000 Mile Service', value: '2'},
-                {label: '40,000 Mile Service', value: '3'},
-                {label: '50,000 Mile Service', value: '4'},
-                {label: '60,000 Mile Service', value: '5'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Scheduled Maintenance'
@@ -229,31 +182,13 @@ function BookingsScreen( { navigation }) {
               itemStyle={{
                   justifyContent: 'flex-start'
               }}
-              dropDownStyle={{ backgroundColor: '#fafafa', height: 75 }}
+              dropDownStyle={{backgroundColor: '#fafafa'}}
               /*onChangeItem={item => setService({
                   service: item.value
               })}*/
             />
           </View>
+  );
+}
 
-          <View style={{ flex: 1 }}>
-            <TouchableOpacity
-              style={bookingStyles.bookingScreenButton}
-              onPress = {() => navigation.navigate('Providers')}
-              underlayColor='#fff'
-            >
-              <Text style={bookingStyles.bookingButtonText}>Find a Provider</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-  
-        <View style={mainStyles.footer}>
-          <TouchableOpacity>
-            <Text style={mainStyles.footerText}>Help and Support Center</Text>
-          </TouchableOpacity>
-        </View>
-      </>
-    );
-  }
-
-  export default BookingsScreen;
+export default Services;

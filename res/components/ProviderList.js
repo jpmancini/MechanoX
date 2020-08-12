@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   },
   ratingBox: {
     flexDirection: 'row',
-  },
+  }
 });
 
 export default ProviderList;

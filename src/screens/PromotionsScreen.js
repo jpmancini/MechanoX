@@ -21,7 +21,6 @@ function PromotionsScreen( { navigation }) {
         </View>
   
         <View style={mainStyles.mainContainer}>
-          <Text>Temporary</Text>
         </View>
   
         <View style={mainStyles.footer}>
