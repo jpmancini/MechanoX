@@ -12,13 +12,14 @@ import PromotionsScreen from './src/screens/PromotionsScreen.js';
 import ProvidersScreen from './src/screens/ProvidersScreen.js';
 import AppointmentScreen from './src/screens/AppointmentScreen.js';
 import ConfirmationScreen from './src/screens/ConfirmationScreen.js';
+import LocationScreen from './src/screens/LocationScreen.js';  
 
 const Stack = createStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName="Providers" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Main" component={MainScreen} />
         <Stack.Screen name="Register" component={RegisterScreen} />
@@ -29,6 +30,7 @@ function App() {
         <Stack.Screen name="Providers" component={ProvidersScreen} />
         <Stack.Screen name="Appointment" component={AppointmentScreen} />
         <Stack.Screen name="Confirmation" component={ConfirmationScreen} />
+        <Stack.Screen name="Location" component={LocationScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

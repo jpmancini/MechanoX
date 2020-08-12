@@ -1,44 +1,49 @@
 import React, { useState } from "react";
-import { FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { View, FlatList, SafeAreaView, StatusBar, StyleSheet, Text, TouchableOpacity } from "react-native";
 
 const DATA = [
   {
     id: "1p",
     title: "Max's Mechanic Shop",
+    address: "1 Main St, New York, NY",
+    phone: "(123) 456-7890",
+    rating: "8.6",
   },
   {
     id: "2p",
     title: "Joe's Auto Repair Shop",
+    address: "1 Main St, New York, NY",
+    phone: "(123) 456-7890",
+    rating: "6.3",
   },
   {
     id: "3p",
     title: "Steve's Fixing Store",
+    address: "1 Main St, New York, NY",
+    phone: "(123) 456-7890",
+    rating: "9.2",
   },
   {
     id: "4p",
     title: "Marty Mechanic",
-  },
-  {
-    id: "5p",
-    title: "Alex's Car Dealer",
-  },
-  {
-    id: "6p",
-    title: "Taylor's Honda Shop",
-  },
-  {
-    id: "7p",
-    title: "Brookside Repairs",
-  },
-  {
-    id: "8p",
-    title: "D.C. Mechanic Shop",
-  },
+    address: "1 Main St, New York, NY",
+    phone: "(123) 456-7890",
+    rating: "7.8",
+  }
 ];
 
 const Item = ({ item, onPress, style }) => (
   <TouchableOpacity onPress={onPress} style={[styles.item, style]}>
-    <Text style={styles.title}>{item.title}</Text>
+    <View style = { styles.item }>
+      <Text style={styles.title}>{item.title}</Text>
+      <Text style={styles.subtext}>{item.address}</Text>
+      <Text style={styles.subtext}>{item.phone}</Text>
+      <View style={styles.ratingBox}>
+        <Text>Rating: </Text>
+        <Text>{item.rating}</Text>
+        <Text>/10</Text>
+      </View>
+    </View>
   </TouchableOpacity>
 );
 
@@ -49,11 +54,13 @@ const ProviderList = () => {
     const backgroundColor = item.id === selectedId ? "#a3a3a3" : "#fff";
 
     return (
-      <Item
-        item={item}
-        onPress={() => setSelectedId(item.id)}
-        style={{ backgroundColor }}
-      />
+      <>
+        <Item
+          item={item}
+          onPress={() => setSelectedId(item.id)}
+          style={{ backgroundColor }}
+        />
+      </>
     );
   };
 
@@ -76,13 +83,21 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   item: {
-    padding: 30,
+    flexDirection: 'column',
+    padding: 10,
     marginVertical: 8,
-    marginHorizontal: 16,
-    width: 300,
+    marginHorizontal: 15,
+    width: '90%',
   },
   title: {
-    fontSize: 32,
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  subtext: {
+    fontSize: 14,
+  },
+  ratingBox: {
+    flexDirection: 'row',
   },
 });
 

@@ -66,7 +66,7 @@ function VehiclesScreen( { navigation }) {
 
         <TouchableOpacity
           style={vehicleStyles.vehicleScreenButton}
-          onPress = {() => navigation.navigate('Bookings')}
+          onPress = {() => navigation.navigate('Location')}
           underlayColor='#fff'
         >
           <Text style={loginStyles.loginButtonText}>Book Now</Text>

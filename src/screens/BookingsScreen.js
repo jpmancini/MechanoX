@@ -62,8 +62,12 @@ function BookingsScreen( { navigation }) {
             />
             <DropDownPicker zIndex={7}
               items={[
-                {label: 'UK', value: 'uk'},
-                {label: 'France', value: 'france'},
+                {label: 'Serpentine Belt Replacement', value: '0'},
+                {label: 'Drive Belt Idler Pulley Replacement', value: '1'},
+                {label: 'Air Filter Replacement', value: '2'},
+                {label: 'Camshaft Position Sensor Replacement', value: '3'},
+                {label: 'Catalytic Converter Replacement', value: '4'},
+                {label: 'Clutch Replacement', value: '5'},
               ]}
               defaultValue={service}
               placeholder='Powertrain, Engine & Transmission'
@@ -77,14 +81,14 @@ function BookingsScreen( { navigation }) {
                   justifyContent: 'flex-start'
               }}
               dropDownStyle={{backgroundColor: '#fafafa'}}
-              onChangeItem={item => setService({
+              /*onChangeItem={item => setService({
                   service: item.value
-              })}
+              })}*/
             />
             <DropDownPicker zIndex={6}
               items={[
-                {label: 'UK', value: 'uk'},
-                {label: 'France', value: 'france'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Heating & Air Conditioning'
@@ -98,14 +102,14 @@ function BookingsScreen( { navigation }) {
                   justifyContent: 'flex-start'
               }}
               dropDownStyle={{backgroundColor: '#fafafa'}}
-              onChangeItem={item => setService({
+              /*onChangeItem={item => setService({
                   service: item.value
-              })}
+              })}*/
             />
             <DropDownPicker zIndex={5}
               items={[
-                {label: 'UK', value: 'uk'},
-                {label: 'France', value: 'france'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Electrical & Lights'
@@ -119,14 +123,14 @@ function BookingsScreen( { navigation }) {
                   justifyContent: 'flex-start'
               }}
               dropDownStyle={{backgroundColor: '#fafafa'}}
-              onChangeItem={item => setService({
+              /*onChangeItem={item => setService({
                   service: item.value
-              })}
+              })}*/
             />
             <DropDownPicker zIndex={4}
               items={[
-                {label: 'UK', value: 'uk'},
-                {label: 'France', value: 'france'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Suspension, Steering & Wheels'
@@ -140,14 +144,14 @@ function BookingsScreen( { navigation }) {
                   justifyContent: 'flex-start'
               }}
               dropDownStyle={{backgroundColor: '#fafafa'}}
-              onChangeItem={item => setService({
+              /*onChangeItem={item => setService({
                   service: item.value
-              })}
+              })}*/
             />
             <DropDownPicker zIndex={3}
               items={[
-                {label: 'UK', value: 'uk'},
-                {label: 'France', value: 'france'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Brakes'
@@ -161,14 +165,14 @@ function BookingsScreen( { navigation }) {
                   justifyContent: 'flex-start'
               }}
               dropDownStyle={{backgroundColor: '#fafafa'}}
-              onChangeItem={item => setService({
+              /*onChangeItem={item => setService({
                   service: item.value
-              })}
+              })}*/
             />
             <DropDownPicker zIndex={2}
               items={[
-                {label: 'UK', value: 'uk'},
-                {label: 'France', value: 'france'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Body, Glass & Interior'
@@ -182,14 +186,14 @@ function BookingsScreen( { navigation }) {
                   justifyContent: 'flex-start'
               }}
               dropDownStyle={{backgroundColor: '#fafafa'}}
-              onChangeItem={item => setService({
+              /*onChangeItem={item => setService({
                   service: item.value
-              })}
+              })}*/
             />
             <DropDownPicker zIndex={1}
               items={[
-                {label: 'UK', value: 'uk'},
-                {label: 'France', value: 'france'},
+                {label: 'test1', value: 'uk'},
+                {label: 'test2', value: 'france'},
               ]}
               defaultValue={service}
               placeholder='Scheduled Maintenance'
@@ -203,9 +207,9 @@ function BookingsScreen( { navigation }) {
                   justifyContent: 'flex-start'
               }}
               dropDownStyle={{backgroundColor: '#fafafa'}}
-              onChangeItem={item => setService({
+              /*onChangeItem={item => setService({
                   service: item.value
-              })}
+              })}*/
             />
           </View>
 
