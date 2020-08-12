@@ -22,7 +22,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.MarbGroup.MechanoX",
+      "buildNumber": "1.0.0"
     }
   }
 }
