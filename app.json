@@ -24,6 +24,10 @@
     "ios": {
       "bundleIdentifier": "com.MarbGroup.MechanoX",
       "buildNumber": "1.0.0"
-    }
+    },
+    "android": {
+      "package": "com.MarbGroup.MechanoX"
+    },
+    "entryPoint": "node_modules/expo/AppEntry.js"
   }
 }
